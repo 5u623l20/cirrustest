@@ -1,0 +1,11 @@
+freebsd_instance:
+  image_family: freebsd-14-0
+
+task:
+  script:
+    - echo $CIRRUS_WORKING_DIR
+    - find / -type f -name ADSF
+    - pwd
+    - ls -la
+    - cd $CIRRUS_WORKING_DIR
+    - pwd
